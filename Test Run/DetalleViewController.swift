@@ -8,10 +8,17 @@
 
 import UIKit
 
+protocol DetalleViewControllerDelegate {
+    func NumeroCambiado (numero : Int)
+}
+
 class DetalleViewController: UIViewController {
     
     //MARK: Declaraciones
     var numeroFila = -1
+    var dato : String = ""
+    var datoNumero : Int = 0
+    var delegado : DetalleViewControllerDelegate? = nil
     
     @IBOutlet weak var lblMid: UILabel!
     //MARK: Mètodos
@@ -20,6 +27,13 @@ class DetalleViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        lblMid.text = "Haz elegido a \(dato) y tiene \(datoNumero)"
+        
+        if delegado != nil {
+        
+            delegado?.NumeroCambiado(numero: numeroFila)
+        
+        }
     }
 
     override func didReceiveMemoryWarning() {

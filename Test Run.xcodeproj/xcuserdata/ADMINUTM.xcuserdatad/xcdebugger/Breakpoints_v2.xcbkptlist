@@ -6,27 +6,27 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Test Run/ViewController.swift"
-            timestampString = "502663372.864961"
+            timestampString = "502751949.140624"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "ViewController"
             landmarkType = "3">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Test_Run.ViewController.arreglo.setter : Swift.Array&lt;(Swift.String, Swift.String)&gt;"
+                  symbolName = "Test_Run.ViewController.datos.setter : Swift.Array&lt;(Swift.String, Swift.Int)&gt;"
                   moduleName = "Test Run"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ADMINUTM/Desktop/Test%20Run/Test%20Run/ViewController.swift"
-                  timestampString = "502665312.095733"
+                  timestampString = "502738557.732665"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -34,14 +34,14 @@
                   offsetFromSymbolStart = "65">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Test_Run.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Test_Run.ViewController"
                   moduleName = "Test Run"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ADMINUTM/Desktop/Test%20Run/Test%20Run/ViewController.swift"
-                  timestampString = "502665312.097697"
+                  timestampString = "502738557.734834"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -49,14 +49,14 @@
                   offsetFromSymbolStart = "57">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Test_Run.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Test_Run.ViewController&gt;"
                   moduleName = "Test Run"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ADMINUTM/Desktop/Test%20Run/Test%20Run/ViewController.swift"
-                  timestampString = "502665312.099782"
+                  timestampString = "502738557.736946"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -69,15 +69,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Test Run/ViewController.swift"
-            timestampString = "502664470.441954"
+            timestampString = "502751949.140624"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "didReceiveMemoryWarning()"
             landmarkType = "7">
          </BreakpointContent>
@@ -85,16 +85,191 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Test Run/ViewController.swift"
-            timestampString = "502664598.594733"
+            timestampString = "502751949.140624"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Test Run/DetalleViewController.swift"
+            timestampString = "502737677.190405"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "DetalleViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test_Run.DetalleViewController.delegado.setter : Swift.Optional&lt;Test_Run.DetalleViewControllerDelegate&gt;"
+                  moduleName = "Test Run"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ADMINUTM/Desktop/Test%20Run/Test%20Run/DetalleViewController.swift"
+                  timestampString = "502739148.928095"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "522">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test_Run.DetalleViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Test_Run.DetalleViewController"
+                  moduleName = "Test Run"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ADMINUTM/Desktop/Test%20Run/Test%20Run/DetalleViewController.swift"
+                  timestampString = "502739148.93006"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test_Run.DetalleViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Test_Run.DetalleViewController&gt;"
+                  moduleName = "Test Run"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ADMINUTM/Desktop/Test%20Run/Test%20Run/DetalleViewController.swift"
+                  timestampString = "502739148.932062"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "115">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Test Run/AgregarViewController.swift"
+            timestampString = "502751949.140624"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "btnSave(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Test Run/AgregarViewController.swift"
+            timestampString = "502751949.140624"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "btnSave(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Test Run/AgregarViewController.swift"
+            timestampString = "502751949.140624"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "btnSave(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test_Run.AgregarViewController.btnSave (Any) -&gt; ()"
+                  moduleName = "Test Run"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ADMINUTM/Desktop/Test%20Run/Test%20Run/AgregarViewController.swift"
+                  timestampString = "502748371.915141"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "5385">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test_Run.AgregarViewController.(btnSave (Any) -&gt; ()).(closure #2)"
+                  moduleName = "Test Run"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ADMINUTM/Desktop/Test%20Run/Test%20Run/AgregarViewController.swift"
+                  timestampString = "502748371.916936"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Test Run/ViewController.swift"
+            timestampString = "502751949.140624"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "tableView(_:editActionsForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Test Run/AgregarViewController.swift"
+            timestampString = "502751772.42539"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "btnSave(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

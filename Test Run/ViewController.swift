@@ -9,9 +9,19 @@
 import UIKit
 
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, DetalleViewControllerDelegate, AgregarViewControllerDelegate{
 
-    var arreglo = [("Daniel","Hernandez"),("Casi","LF"),("Item","item2")]
+    var esEdicion = false
+    
+    var datos = [("Dan",24),("Sam",15),("Mill",25),("John",23)]
+    
+    var filaSeleccionada = -1
+    
+    @IBOutlet weak var Tabla: UITableView!
+    
+    @IBAction func btnAdd(_ sender: Any) {
+        performSegue(withIdentifier: "AgregarSegue", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,24 +33,86 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
     
+        //MARK: - UIView Delegates
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        switch segue.identifier! {
+        case "labelSegue":
+            let view = segue.destination as! DetalleViewController
+            
+            view.numeroFila = filaSeleccionada
+            view.dato = datos [filaSeleccionada].0
+            view.datoNumero = datos [filaSeleccionada].1
+            
+            view.delegado = self
+            break
+        case "AgregarSegue":
+            let view = segue.destination as! AgregarViewController
+            
+            if (esEdicion) {
+                view.Fila = filaSeleccionada
+                view.Nombre = datos[filaSeleccionada].0
+                view.Edad = datos[filaSeleccionada].1
+                esEdicion = false
+            }
+            
+            view.delegado = self
+            break
+        default:
+            break
+        }
+        
+        
+    }
+    
+    func NumeroCambiado(numero : Int) {
+        print("Numero cambiado \(numero)")
+        
+        datos[numero].1 = datos[numero].1 + 1
+        
+        Tabla.reloadData()
+    }
+    
+    //MARK: -TableViewDelegates
+    
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return arreglo.count
+        return datos.count
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let eliminar =  UITableViewRowAction(style: .destructive, title: "Borrar", handler: borrarFila)
+        let editar = UITableViewRowAction(style: .normal, title: "Editar", handler: editarFila)
+        
+        return [eliminar, editar]
+    }
+    
+    func borrarFila (sender:UITableViewRowAction, indexPath : IndexPath) {
+        datos.remove(at: indexPath.row)
+        Tabla.reloadData()
+    }
+    
+    func editarFila (sender:UITableViewRowAction, indexPath : IndexPath) {
+        esEdicion = true
+        filaSeleccionada = indexPath.row
+        performSegue(withIdentifier: "AgregarSegue", sender: sender)
+        Tabla.reloadData()
     }
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let proto = (indexPath.row % 2 == 0) ? "Proto1" : "Proto2"
         
-        let vista = tableView.dequeueReusableCell(withIdentifier: "Proto1", for: indexPath) as! TableViewCell
+        let vista = tableView.dequeueReusableCell(withIdentifier: proto, for: indexPath) as! TableViewCell
         
         if indexPath.row % 2 == 0 {
-            vista.lblIzquierda.text = arreglo[indexPath.row].0
-            vista.lblDerecha.text = arreglo[indexPath.row].1
+            vista.lblIzquierda.text = datos[indexPath.row].0
+            vista.lblDerecha.text = String(datos[indexPath.row].1)
+
         }
         else {
-            vista.lblDerecha.text = arreglo[indexPath.row].0
-            vista.lblIzquierda.text = arreglo[indexPath.row].1
+            vista.lblCentral.text = datos[indexPath.row].0
         }
         return vista
         
@@ -48,6 +120,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Fila \(indexPath.row)")
+        
+        //detalle segue
+        filaSeleccionada = indexPath.row
+        performSegue(withIdentifier: "labelSegue", sender: self)
+    }
+    
+    func agregarRegistro(nombre: String, edad: Int, fila: Int) {
+        datos.append((nombre,edad))
+        Tabla.reloadData()
     }
     
 }

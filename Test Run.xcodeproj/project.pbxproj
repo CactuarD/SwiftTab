@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		088C91481DF71AB5004F0DFD /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088C91471DF71AB5004F0DFD /* DetalleViewController.swift */; };
+		088C914A1DF73A25004F0DFD /* AgregarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088C91491DF73A25004F0DFD /* AgregarViewController.swift */; };
 		08DF11F11DF5E7C5004045B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DF11F01DF5E7C5004045B1 /* AppDelegate.swift */; };
 		08DF11F31DF5E7C5004045B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DF11F21DF5E7C5004045B1 /* ViewController.swift */; };
 		08DF11F61DF5E7C6004045B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DF11F41DF5E7C6004045B1 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		088C91471DF71AB5004F0DFD /* DetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
+		088C91491DF73A25004F0DFD /* AgregarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgregarViewController.swift; sourceTree = "<group>"; };
 		08DF11ED1DF5E7C5004045B1 /* Test Run.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Run.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DF11F01DF5E7C5004045B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08DF11F21DF5E7C5004045B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				08DF11FC1DF5E7C6004045B1 /* Info.plist */,
 				08DF12021DF5F704004045B1 /* TableViewCell.swift */,
 				088C91471DF71AB5004F0DFD /* DetalleViewController.swift */,
+				088C91491DF73A25004F0DFD /* AgregarViewController.swift */,
 			);
 			path = "Test Run";
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				08DF12031DF5F704004045B1 /* TableViewCell.swift in Sources */,
 				08DF11F31DF5E7C5004045B1 /* ViewController.swift in Sources */,
 				08DF11F11DF5E7C5004045B1 /* AppDelegate.swift in Sources */,
+				088C914A1DF73A25004F0DFD /* AgregarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
